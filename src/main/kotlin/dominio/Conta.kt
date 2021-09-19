@@ -7,7 +7,10 @@ class Conta @JvmOverloads constructor(
     var titular: Titular,
     var saldo: BigDecimal = BigDecimal(0)
 ){
-    fun deposita(valor:BigDecimal){
+    fun credita(valor:BigDecimal){
         this.saldo +=valor
+    }
+    fun debita(valor:BigDecimal){
+        this.saldo -= valor
     }
 }
