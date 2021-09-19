@@ -1,0 +1,4 @@
+package observables
+
+interface Observer {
+}
